@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --color: #f1c40f;
+    --color_page: #10e5ff;
+
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+    background-color: #ffffff;
+
+}
+
+.containerBoxList {
+
+    position: absolute;
+    width: 20vw;
+    height: 23vw;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+.containerBoxList::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 102%;
+    height: 102%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('img/boxlist.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+}
+.containerBoxList>img:nth-child(1){
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.textnamemain{
+    width: 100%;
+    margin-top: 0.2vw;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 1vw;
+    color: white;
+    
+}
+.listitem{
+    margin-left: 5%;
+    width: 90%;
+    height: 95%;
+    
+
+ overflow-y: auto;
+}
+.boxitem{
+    margin-top: 0.2vw;
+    width: 100%; 
+    height: 3vw;
+    border-radius: 0.5vw;
+    background-color: #ff4f9a;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.text{
+    padding-top: 0.8vw;
+    padding-left: 0.7vw;
+    font-family: 'Kanit', sans-serif;
+    text-align: left;
+   
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 1vw;
+    color: white; 
+}
+.buttonbox{
+    cursor: pointer;
+    padding-top: 0.1vw;
+    width: 70%; 
+    height: 40%;
+    margin: auto auto;
+    background-color: rgba(255, 255, 255, 0.766);
+    border-radius: 0.5vw;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 0.6vw;
+    color: #ff748e; 
+    transition: 0.4s;
+}
+.buttonbox:hover{
+    box-shadow: white 0 0 0.7vw;
+}
+
+.listitem::-webkit-scrollbar {
+    width: 0vw;  
+  }
+ 
